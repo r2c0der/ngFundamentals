@@ -1,12 +1,20 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
+  <div class="container-fluid">
 
     <div class="row">
-      <div class="col-md-5">
-        <div class="rkmng_navbrand_txt"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
-          Upcoming Angular 2 Events</div>
-      </div>
       <div class="col-md-7">
+        <span class="rkmng_navbrand_txt"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i> &nbsp;[&nbsp;Upcoming ng2 Events      &nbsp;]&nbsp;</span>
+
+         <ul class="nav navbar-nav">
+            <li class="rkmng_navbar_links">  <a class="" >All Events </a></li>
+            <li class="rkmng_navbar_links">  <a class="" >Create Events </a></li>
+            <li role="presentation" class="dropdown rkmng_navbar_links">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Events<span class="caret"></span> </a>
+            </li>
+          </ul>
+
+      </div>
+      <div class="col-md-5">
         <form id="searchForm" class="navbar-form navbar-right">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Search Sessions"/>
