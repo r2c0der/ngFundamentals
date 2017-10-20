@@ -1,0 +1,29 @@
+
+h2{
+  font-family: 'Oxygen', sans-serif;
+  color: #0066cc;
+
+}
+
+.rkmng_event_txt{
+  font-family: 'Delius', sans-serif;
+  font-weight: 600;
+}
+
+
+.rkmng_event_well{
+  background-image:linear-gradient(to top, #cccccc 3%, #ffffff 85%);
+  border-left: solid 3px #0066cc;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: #222222;
+
+}
+
+.rkmng_event_well:hover{
+background-image:linear-gradient(to top, #ffffff 3%, #ffffff 85%);
+  border-left: solid 3px #333333;
+  color: #333333;
+
+}
+
