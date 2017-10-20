@@ -1,6 +1,7 @@
 {
   "name": "rkm-ng-fundamentals",
-  "version": "0.0.0",
+  "description": "Pluralsight Angular2 Fundamental - Take2",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -21,7 +22,12 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
+    "ngx-bootstrap": "^1.9.3",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
