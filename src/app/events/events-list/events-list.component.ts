@@ -12,13 +12,13 @@ export class EventsListComponent implements OnInit {
   ngOnInit() {
   }
 
-  event = {
+  event1 = {
     id: 1,
     name: 'Angular Connect',
     date: '10/22/2037',
     time: '21:00',
     price: 599.99,
-    imageUrl: '/app/assets/images/anagularconnect-shied.png',
+    imageUrl: './assets/images/angularconnect-shield.png',
     location: {
       address: '1057 DT',
       city: 'London',

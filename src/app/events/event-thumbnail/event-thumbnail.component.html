@@ -1,0 +1,18 @@
+<div class="container rkmng_thumbnail_container">
+  <div class="row">
+    <div class="col-lg-6 col-md-6">
+      <div class="well hoverwell thumbnail rkmng_event_well">
+        <span><img src="{{event.imageUrl}}" class="img-responsive rkmng_event_thumbnail-img"/></span>
+        <h2>{{event.name}}</h2>
+        <div class="rkmng_event_txt">Date: {{event.date}}</div>
+        <div class="rkmng_event_txt">Time: {{event.time}}</div>
+        <div class="rkmng_event_txt">Price: {{event.price}}</div>
+        <div>
+          <span class="rkmng_event_txt">Location: {{event.location.address}}</span>
+          <span class="rkmng_event_txt">{{event.location.city}}, {{event.location.country}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
