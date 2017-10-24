@@ -1,5 +1,5 @@
 <div class="container rkmng_common_container">
- <rkmng-event-thumbnail [event]="event1"></rkmng-event-thumbnail>
+ <rkmng-event-thumbnail *ngFor="let event of events" [event]="event"></rkmng-event-thumbnail>
 
 
 </div>
