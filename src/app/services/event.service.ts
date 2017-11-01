@@ -1,14 +1,17 @@
 import { Injectable } from '@angular/core';
 
+
+
 @Injectable()
 export class EventService {
+
 
   constructor() { }
   getEvents(){
     return EVENTS;
-
   }
 }
+
 const EVENTS = [
   {
     id: 1,
@@ -16,7 +19,7 @@ const EVENTS = [
     date: new Date('9/26/2036'),
     time: '10:00 am',
     price: 599.99,
-    imageUrl: '/app/assets/images/angularconnect-shield.png',
+    imageUrl: '../assets/images/angularconnect-shield.png',
     location: {
       address: '1057 DT',
       city: 'London',
@@ -283,7 +286,7 @@ const EVENTS = [
     id: 5,
     name: 'ng-vegas',
     date: new Date('2/10/2037'),
-    time: '9:00 am',
+    time: '8:00 am',
     price: 400.00,
     imageUrl: '/app/assets/images/ng-vegas.png',
     location: {
@@ -316,6 +319,65 @@ const EVENTS = [
           guaranteed!`,
         voters: ['bradgreen', 'igorminar', 'johnpapa']
       }
-    ]
-  }
+    ]},
+  {
+    id: 6 ,
+    name: 'NG UX dog and pony show',
+    date: new Date('7/23/2036'),
+    time: '1:00 pm',
+    price: 99.99,
+    imageUrl: '/app/assets/images/angularconnect-shield.png',
+    location:'',
+    onlineUrl: 'http://nglink.com',
+    sessions: [
+      {
+        id: 1,
+        name: "NG Apps hit the ground running",
+        presenter: "Peter Bacon Darwin",
+        duration: 1,
+        level: "Beginner",
+        abstract: `I just chime in on that one we want to see more charts we need a paradigm shift. Bottleneck mice bells and whistles. Good optics after I ran into Helen at a restaurant, I realized she was just office pretty, for re-inventing the wheel gain traction and waste of resources, yet curate.`,
+        voters: ['bradgreen', 'igorminar', 'martinfowler']
+      },
+
+      {
+        id:2,
+        name: "Ng Touch Base Level",
+        presenter: "Peter Bacon Darwin",
+        duration: 1,
+        level: "Intermediate",
+        abstract: `T-shaped individual. Staff engagement. We are running out of runway we are running out of runway and action item, but wheelhouse data-point, or where do we stand on the latest client ask bench mark. This vendor is incompetent translating our vision of having a market leading platfrom`,
+        voters: ['bradgreen', 'igorminar', 'martinfowler']
+      },
+
+      {
+        id: 3,
+        name: "Podcasting operational change management Angular NG",
+        presenter: "Peter Bacon Darwin",
+        duration: 1,
+        level: "Advanced",
+        abstract: `Learn all about the new pipes in Angular 4, both 
+          how to write them, and how to get the new AI CLI to write 
+          them for you. Given by the famous PBD, president of Angular 
+          University (formerly Oxford University)`,
+        voters: ['bradgreen', 'igorminar', 'martinfowler']
+      },
+      {
+        id: 4,
+        name: "Angular 4 Pipes - Collaboratively administrate empowered market",
+        presenter: "Peter Bacon Darwin",
+        duration: 1,
+        level: "Intermediate",
+        abstract: `Closing these latest prospects is like putting socks on an octopus shoot me an email nor baseline the procedure and samepage your department, i'll book a meeting so we can solution this before the sprint is over for one-sheet, but organic growth, for red flag.`,
+        voters: ['bradgreen', 'igorminar', 'martinfowler']
+      }
+    ]},
+  {
+    id: 7,
+    name: 'Angular information highway will close the loop ',
+
+  },
+
 ]
+
+

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {EventService} from "../../services/event.service";
 
 @Component({
   selector: 'rkmng-events-list',
@@ -6,12 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./events-list.component.scss']
 })
 export class EventsListComponent implements OnInit {
-   events:any[] = EVENTS;
-  constructor() { }
+   events:any[];
+  constructor(private eventService: EventService) {
 
-  ngOnInit() {
+
   }
 
+  /**
+   * Called when component is loaded
+   */
+  ngOnInit() {
+    this.events = this.eventService.getEvents();
+  }
+
+  handleThumbnailClick($event){
+
+    }
 
 }
 
