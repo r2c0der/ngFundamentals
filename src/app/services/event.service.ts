@@ -92,12 +92,21 @@ const EVENTS = [
     ]
   },
   {
+    id: 9,
+    name: 'ReactiveConf',
+    date: new Date('8/15/2028'),
+    time: '2:00 pm',
+    price: 109.99,
+    imageUrl: '../assets/images/reactive-conf.svg',
+    onlineUrl: 'http://angular-onlineUrl.org'
+  },
+  {
     id: 2,
     name: 'ng-nl',
     date: new Date ('4/15/2037'),
     time: '9:00 am',
     price: 950.00,
-    imageUrl: '/app/assets/images/ng-nl.png',
+    imageUrl: '../assets/images/ng-nl.png',
     location: {
       address: 'The NG-NL Convention Center & Scuba Shop',
       city: 'Amsterdam',
@@ -157,7 +166,7 @@ const EVENTS = [
     date: new Date('5/4/2037'),
     time: '9:00 am',
     price: 759.00,
-    imageUrl: '/app/assets/images/ng-conf.png',
+    imageUrl: '../assets/images/ng-conf.png',
     location: {
       address: 'The Palatial America Hotel',
       city: 'Salt Lake City',
@@ -234,12 +243,22 @@ const EVENTS = [
     ]
   },
   {
+    id: 8,
+    name: 'What do you feel you would bring to the NG table? ',
+    date: new Date('1/25/2028'),
+    time: '11:00 am',
+    price: 99.99,
+    imageUrl: '../assets/images/ng-conf.png',
+    onlineUrl: 'http://ng-onlineUrl.org'
+  },
+
+  {
     id: 4,
     name: 'UN Angular Summit',
     date: new Date('6/10/2037'),
     time: '8:00 am',
     price: 800.00,
-    imageUrl: '/app/assets/images/basic-shield.png',
+    imageUrl: '../assets/images/basic-shield.png',
     location: {
       address: 'The UN Angular Center',
       city: 'New York',
@@ -288,7 +307,7 @@ const EVENTS = [
     date: new Date('2/10/2037'),
     time: '8:00 am',
     price: 400.00,
-    imageUrl: '/app/assets/images/ng-vegas.png',
+    imageUrl: '../assets/images/ng-vegas.png',
     location: {
       address: 'The Excalibur',
       city: 'Las Vegas',
@@ -326,8 +345,7 @@ const EVENTS = [
     date: new Date('7/23/2036'),
     time: '1:00 pm',
     price: 99.99,
-    imageUrl: '/app/assets/images/angularconnect-shield.png',
-    location:'',
+    imageUrl: '../assets/images/ngcopenhagen.png',
     onlineUrl: 'http://nglink.com',
     sessions: [
       {
@@ -374,9 +392,72 @@ const EVENTS = [
     ]},
   {
     id: 7,
-    name: 'Angular information highway will close the loop ',
-
+    name: 'Angular Information Highway ',
+    date: new Date('2/2/2038'),
+    time: '1:00 pm',
+    price: 1099.99,
+    imageUrl: '../assets/images/ng-conf.png',
+    onlineUrl: 'http://onlineUrl.org',
+    sessions:[],
   },
+
+  {
+    id:10,
+    name:'Beyond the Angular CLI',
+    date:new Date(1/30/2045),
+    time:'9:00am',
+    price: 2222.00,
+    imageUrl: '../assets/images/ngATL_logo.svg',
+    location:{
+      address: 'The Hotel at Avalon',
+      city: 'Alpharetta GA',
+      country: 'United States'
+    },
+    sessions:[
+      {
+        id: 1,
+        name: 'Build a full-stack application with Colmena (API/Admin/Frontend)',
+        presenter:'Mike Brocchi',
+        duration: 4,
+        level: 'Intermediate',
+        abstract: `
+The cat is out of the bag, people know about the Angular CLI and what it can do for them. But what is coming? What else can it do? What changes and improvements can I expect? Come learn what the Angular CLI can do and will evolve into.`,
+        voters: ['bradgreen', 'igorminar']
+      },
+      {
+        id: 2,
+        name: 'Angular Workshop - Core Concepts, CLI, Components, Data Binding, Services',
+        presenter: 'John Papa',
+        duration: 8,
+        level: 'Advanced',
+        abstract:`
+        Do you want to get a jumpstart on developing with Angular so you can build robust Web applications? John Papa will help you learn how to work with data binding, build components and services, send and receive data to and from a server using Http, RxJS and observables, lazy load modules with routing, best practices you can employ in your applications, and much more! You'll also learn how to get up and running quickly with the Angular CLI. Bring your laptop, as you’ll be writing Angular code using what you learn in several hands-on exercises. What You’ll Learn: · ES2015/TypeScript core concepts · Getting started with the Angular CLI · Bootstrapping your application · The Role of Components · Using Decorators · Binding data to views · Input and output properties · Dependency injection and providers · Managing remote data calls using services · Http and RxJS Observables · Routing and page navigation · Lazy loading and route guards · Template-driven and reactive forms · Tips, tricks and best practices · More!`,
+        voters: ['bradgreen', 'igorminar', 'martinfowler'
+        ]
+      },
+      {
+        id: 3,
+        name: 'State Management with ngrx',
+        presenter: 'Dominic Elm',
+        duration: 4,
+        level: 'Intermediate',
+        abstract:`
+With easy, fun labs, Dominic Elm will help you learn why redux and ngrx is considered an essential library for modern Angular applications. Learn how redux works and why immutable data flows are crucial to predictable UX. Learn how ngrx brings reactive redux features to your Angular application and see how effects and facades work with asynchronous processes. See how easy it is to test your application logic and explore the redux time-travel features.`,
+voters:[]
+},
+{
+id: 4,
+name: 'Immersive World of Mixed Reality.',
+presenter: 'Aysegul Yonet',
+duration: 1,
+level: 'Beginner',
+abstract:`
+        We will look into creating immersive virtual worlds using WebVR apis and Angular components. While creating 3D experiences on the web has not been the easiest, Angular gives us an opportunity to create sharable libraries and create experiences in a declarative way. Get to know the building blocks of 3D Web and learn how you can write your own components.`
+      }
+
+    ]
+  },
+
 
 ]
 

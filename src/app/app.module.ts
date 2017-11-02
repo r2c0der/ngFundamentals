@@ -8,6 +8,7 @@ import { RKMNgTopNavComponent } from './ui/rkmng-top-nav/rkmng-top-nav.component
 import { EventThumbnailComponent } from './events/event-thumbnail/event-thumbnail.component';
 
 import { EventService } from "./services/event.service";
+import {ToastrService} from "./services/toastr.service";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EventService } from "./services/event.service";
     BrowserModule
   ],
   providers: [
-    EventService
+    EventService,
+    ToastrService
   ],
   bootstrap: [RKMNgFundamentalIndexComponent]
 })

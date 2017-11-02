@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {EventService} from "../../services/event.service";
+import { ToastrService } from "../../services/toastr.service";
 
 @Component({
   selector: 'rkmng-events-list',
@@ -8,7 +9,9 @@ import {EventService} from "../../services/event.service";
 })
 export class EventsListComponent implements OnInit {
    events:any[];
-  constructor(private eventService: EventService) {
+  constructor(
+    private _eventService: EventService,
+    private  _toastrService: ToastrService) {
 
 
   }
@@ -17,10 +20,12 @@ export class EventsListComponent implements OnInit {
    * Called when component is loaded
    */
   ngOnInit() {
-    this.events = this.eventService.getEvents();
+    this.events = this._eventService.getEvents();
   }
 
-  handleThumbnailClick($event){
+  handleThumbnailClick(eventName){
+    this._toastrService.success(eventName);
+
 
     }
 
