@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {Router, RouterModule} from "@angular/router";
 
 import { AppComponent } from './app.component';
 import { EventsListComponent } from './events/events-list/events-list.component';
@@ -8,7 +9,9 @@ import { RKMNgTopNavComponent } from './ui/rkmng-top-nav/rkmng-top-nav.component
 import { EventThumbnailComponent } from './events/event-thumbnail/event-thumbnail.component';
 
 import { EventService } from "./services/event.service";
-import {ToastrService} from "./services/toastr.service";
+import { ToastrService} from "./services/toastr.service";
+import { EventsDetailsComponent } from './events/events-details/events-details.component';
+import { rkmngRoutes } from "./rkmng-routes";
 
 @NgModule({
   declarations: [
@@ -16,10 +19,12 @@ import {ToastrService} from "./services/toastr.service";
     RKMNgFundamentalIndexComponent,
     EventsListComponent,
     RKMNgTopNavComponent,
-    EventThumbnailComponent
+    EventThumbnailComponent,
+    EventsDetailsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(rkmngRoutes)
   ],
   providers: [
     EventService,

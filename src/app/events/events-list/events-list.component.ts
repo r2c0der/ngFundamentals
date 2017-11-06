@@ -3,7 +3,6 @@ import {EventService} from "../../services/event.service";
 import { ToastrService } from "../../services/toastr.service";
 
 @Component({
-  selector: 'rkmng-events-list',
   templateUrl: './events-list.component.html',
   styleUrls: ['./events-list.component.scss']
 })

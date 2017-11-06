@@ -1,8 +1,16 @@
 <div class="container rkmng_common_container">
   <div class="row">
-    <div  *ngFor="let event of events">
-      <rkmng-event-thumbnail (click)="handleThumbnailClick(event.name)" [event]="event"></rkmng-event-thumbnail>
+    <div *ngFor="let event of events">
+      <div class="col-md-6">
+
+        <div class="panel panel-default">
+          <rkmng-event-thumbnail (click)="handleThumbnailClick(event.name)" [event]="event"></rkmng-event-thumbnail>
+        </div>
+      </div>
+
+        </div>
+
     </div>
+
   </div>
 
-</div>

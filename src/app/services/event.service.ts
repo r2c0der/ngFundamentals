@@ -10,6 +10,11 @@ export class EventService {
   getEvents(){
     return EVENTS;
   }
+
+  getEventById(id: number){
+    return EVENTS.find(event => event.id === id);
+
+  }
 }
 
 const EVENTS = [
@@ -19,7 +24,7 @@ const EVENTS = [
     date: new Date('9/26/2036'),
     time: '10:00 am',
     price: 599.99,
-    imageUrl: '../assets/images/angularconnect-shield.png',
+    imageUrl: '../assets/images/nglogos/ng_angularconnect-shield.png',
     location: {
       address: '1057 DT',
       city: 'London',
@@ -97,7 +102,7 @@ const EVENTS = [
     date: new Date('8/15/2028'),
     time: '2:00 pm',
     price: 109.99,
-    imageUrl: '../assets/images/reactive-conf.svg',
+    imageUrl: '../assets/images/nglogos/ng_reactjs_sm.png',
     onlineUrl: 'http://angular-onlineUrl.org'
   },
   {
@@ -106,7 +111,7 @@ const EVENTS = [
     date: new Date ('4/15/2037'),
     time: '9:00 am',
     price: 950.00,
-    imageUrl: '../assets/images/ng-nl.png',
+    imageUrl: '../assets/images/nglogos/ng_ng-nl.png',
     location: {
       address: 'The NG-NL Convention Center & Scuba Shop',
       city: 'Amsterdam',
@@ -166,7 +171,7 @@ const EVENTS = [
     date: new Date('5/4/2037'),
     time: '9:00 am',
     price: 759.00,
-    imageUrl: '../assets/images/ng-conf.png',
+    imageUrl: '../assets/images/nglogos/ng_ng-conf.png',
     location: {
       address: 'The Palatial America Hotel',
       city: 'Salt Lake City',
@@ -244,11 +249,11 @@ const EVENTS = [
   },
   {
     id: 8,
-    name: 'What do you feel you would bring to the NG table? ',
+    name: 'Sitting @ the NG table? ',
     date: new Date('1/25/2028'),
     time: '11:00 am',
     price: 99.99,
-    imageUrl: '../assets/images/ng-conf.png',
+    imageUrl: '../assets/images/nglogos/ng_ng-conf.png',
     onlineUrl: 'http://ng-onlineUrl.org'
   },
 
@@ -258,7 +263,7 @@ const EVENTS = [
     date: new Date('6/10/2037'),
     time: '8:00 am',
     price: 800.00,
-    imageUrl: '../assets/images/basic-shield.png',
+    imageUrl: '../assets/images/nglogos/ng_basic-shield.png',
     location: {
       address: 'The UN Angular Center',
       city: 'New York',
@@ -307,7 +312,7 @@ const EVENTS = [
     date: new Date('2/10/2037'),
     time: '8:00 am',
     price: 400.00,
-    imageUrl: '../assets/images/ng-vegas.png',
+    imageUrl: '../assets/images/nglogos/ng_ng-vegas.png',
     location: {
       address: 'The Excalibur',
       city: 'Las Vegas',
@@ -345,7 +350,7 @@ const EVENTS = [
     date: new Date('7/23/2036'),
     time: '1:00 pm',
     price: 99.99,
-    imageUrl: '../assets/images/ngcopenhagen.png',
+    imageUrl: '../assets/images/nglogos/ng_ngcopenhagen.png',
     onlineUrl: 'http://nglink.com',
     sessions: [
       {
@@ -396,7 +401,7 @@ const EVENTS = [
     date: new Date('2/2/2038'),
     time: '1:00 pm',
     price: 1099.99,
-    imageUrl: '../assets/images/ng-conf.png',
+    imageUrl: '../assets/images/nglogos/ng_ng-conf.png',
     onlineUrl: 'http://onlineUrl.org',
     sessions:[],
   },
@@ -407,7 +412,7 @@ const EVENTS = [
     date:new Date(1/30/2045),
     time:'9:00am',
     price: 2222.00,
-    imageUrl: '../assets/images/ngATL_logo.svg',
+    imageUrl: '../assets/images/nglogos/ng_ngATL_logo.png',
     location:{
       address: 'The Hotel at Avalon',
       city: 'Alpharetta GA',

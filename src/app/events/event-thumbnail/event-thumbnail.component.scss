@@ -1,39 +1,84 @@
 h2{
   font-family: 'Prosto One', sans-serif;
 }
-.rkmng_event_txt{
-  font-family: 'Oxygen', sans-serif;
-  font-weight: 600;
+
+.rkmng_event_thumbnail-container{
+  position:relative;
 }
 
-
-.rkmng_event_well{
-  background-image:linear-gradient(to top, #cccccc 3%, #ffffff 85%);
-  border-left: solid 3px #0066cc;
+.rkmng_event_thumbnail{
+  padding: 0 0 0 3em;
+  border-left: solid 5px #0066cc;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   color: #222222;
-
+  max-height: 95em;
 
 }
+
+.rkmng_event_thumbnail:hover{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: solid 5px #990033;
+  color: #333333;
+  cursor: pointer;
+}
+
+
+.rkmng_event_title{
+  font-family: 'Shrikhand', sans-serif;
+  color: #990033;
+  padding-top: .5em;
+  font-weight: 600;
+  font-size: 1.5em;
+  overflow-wrap: break-word;
+}
+
+.rkmng_event_title:hover{
+  color:#0066cc;
+}
+
+.rkmng_event_thumbnail-blockinfo{
+  display: inline-block;
+  max-width: 350px;
+  margin-top: 3em;
+
+}
+
+.rkmng_event_thumbnail-img{
+
+}
+
+.rkmng_event_txt{
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: .85;
+}
+
+
+
+
+
+[hidden]{
+  display:none !important;
+}
+.pointable {
+  cursor:pointer;
+}
+
+
 
 .rkmng_event_well:hover{
   background-image:linear-gradient(to top, #ffffff 3%, #ffffff 85%);
   border-left: solid 3px #333333;
   color: #333333;
+  cursor: pointer;
 
 }
 
-.rkmng_thumbnail_container{
-  position:relative;
-  margin-top: 5em;
 
-}
-.rkmng_event_thumbnail-img{
-  width: 15%;
-  padding:0;
-}
 
 .thumbnail{
-  min-height: 210px;
+  max-height: 4em;
 }
